@@ -1,9 +1,10 @@
 /* Base styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body {
     min-width: 290px;
     color: #4d4e53;
@@ -11,19 +12,20 @@ html, body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
 }
-/* navbar header */
-#navbar header{
+
+/* Navbar header */
+#navbar header {
     background-color: #ffffff;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px; /* Reduced size for better alignment */
     line-height: 1.5;
-    height: auto;
     margin: 20px 10px;
     display: block;
 }
-/* navbar container */
- #navbar{
+
+/* Navbar container */
+#navbar {
     background-color: #ffffff;
     width: 300px;
     position: fixed;
@@ -33,147 +35,53 @@ html, body {
     border-right: 1px solid rgba(0, 22, 22, 0.4);
     overflow-y: auto;
     z-index: 10;
- }
- /* navbar items */
- #navbar ul {
-     list-style: none;
-     padding: 0;
- }
+}
 
- #navbar li {
-    color:#4d4e53;
-    border-top: 1px solid black;
+/* Navbar items */
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li {
     text-align: left;
- }
- /* li{ */
-    /* text-align: -webkit-match-parent; */
- /* } */
- /* navbar links */
- #navbar a {
+    border-top: 1px solid rgba(0, 22, 22, 0.2);
+}
+
+/* Navbar links */
+#navbar a {
     display: block;
     padding: 10px 20px;
     color: #4d4e53;
     text-decoration: none;
     cursor: pointer;
     font-size: 16px;
-    transition: tex-indent 0.3s ease-in-out, background-color 0.3s;
- }
-
- #navbar a:hover { 
-    font-weight: 500;
-    text-indent: 10px;
-    background-color: #f0f0f0;
- }
-
- /* Main documentation section  */
- #main-doc {
-    position: relative;
-    margin-left: 320px;
-    padding: 20px;
-    margin-bottom: 50px;
- }
-
- /* Main section styling */
- .main-section{
-    margin-bottom: 30px;
- }
-
- .main-section > header{
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: left;
- }
-
- .main-section{
-    margin-bottom: 30px;
- }
- .main-section > header{
-     font-size: 1.6rem;
-     font-weight: bold;
-     color: #333;
-     margin-bottom: 15px;
-     text-align: left;
- }
-
- .main-section > article{
-    margin-bottom: 20px;
- /* Sidebar navigation  */
- #sidebar {
-    width: 290px;
-    background-color: #f9f9f9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-y: auto;
-    border-right: 1px solid rgba(0, 22, 22, 0.4);
- }
-
- Sidebar links 
- #sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
- }
-#navbar { 
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-    overflow-y: auto;
-    /* border-left:  1px   #4d4e53 solid ; */
-}
-
-#navbar > li {  
-    color: #4d4e53;
-    border-top: 1px solid black;
-    /* list-style: none; */
-}
-
-#navbar > header { 
-    color: black;
-    margin: 10px;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: thin;
-}
-
-#navbar a {
-    display: block;
-    padding: 10px 30px;
-    color: #4d4e53;
-    cursor: pointer;
-    text-decoration: none;
-    border-top: 1px solid rgba(0, 22, 22, 0.2);
+    transition: text-indent 0.3s ease-in-out, background-color 0.3s;
 }
 
 #navbar a:hover {
-    background-color: #ddd;
+    font-weight: 500;
+    text-indent: 10px;
+    background-color: #f0f0f0;
 }
 
 /* Main documentation section */
- #main-doc { 
-    position: absolute;
-    margin-left: 310px;
+#main-doc {
+    margin-left: 320px; /* Matches navbar width */
     padding: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
+/* Main section styling */
 .main-section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .main-section > header {
-    font-size: 1.8em;
-    color: black;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 17px; /* Standardized font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
     text-align: left;
 }
 
@@ -191,46 +99,9 @@ code {
     border-radius: 6px;
     line-height: 1.5;
     font-size: 14px;
-    
 }
 
 /* Responsive design */
-@media only screen and (max-width: 815px) {
-    #navbar {
-        background-color: white;
-        position: absolute;
-        top: 0;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-height: 275px;
-        border: none;
-        z-index: 1;
-        border-bottom: 2px solid;
-    }
-
-    #main-doc {
-        position: relative;
-        margin-left: 0px;
-        margin-top: 270px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #main-doc {
-        margin-left: -10px;
-    }
-
-    code {
-        margin-left: -20px;
-        width: 100%;
-        padding: 15px;
-        border-radius: 0;
-        box-sizing: border-box;
-    }
-}
-
-/* Responsive design for smaller screens */
 @media only screen and (max-width: 815px) {
     #navbar {
         position: absolute;
@@ -274,4 +145,13 @@ a {
 
 p {
     margin-bottom: 15px;
+    
+}
+.force-line-break {
+    white-space: pre-line;
+}
+
+/* Adjusted font size for h2 globally */
+h2 {
+    font-size: 20px;
 }
