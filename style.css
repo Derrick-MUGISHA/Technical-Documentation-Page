@@ -15,24 +15,30 @@ html, body {
 
 /* Navbar header */
 #navbar header {
-    background-color: #ffffff;
+    color: black;
     text-align: center;
-    font-weight: bold;
-    font-size: 20px; /* Reduced size for better alignment */
+    /* font-weight: bold; */
+    font-size: 28px; /* Reduced size for better alignment */
     line-height: 1.5;
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 30px;
 }
 
 /* Navbar container */
+
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
+    width: 22%;
     height: 100%;
-    border-right: 1px solid rgba(0, 22, 22, 0.4);
+    border-right: solid;
+    border-color: #b3b5b6;
     overflow-y: auto;
-    z-index: 10;
 }
 
 /* Navbar items */
@@ -52,15 +58,16 @@ html, body {
     text-decoration: none;
     cursor: pointer;
     font-size: 16px;
+    padding: 12px 30px;
     /* transition: text-indent 0.3s ease-in-out, background-color 0.3s; */
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
-#navbar a:hover {
+/* #navbar a:hover {
     font-weight: 500;
     text-indent: 10px;
     background-color: #f0f0f0;
-}
+} */
 
 /* Main documentation section */
 #main-doc {
@@ -72,6 +79,7 @@ html, body {
 /* Main section styling */
 .main-section {
     margin-bottom: 30px;
+    padding-left: 30px;
 }
 
 .main-section > header {
